@@ -25,7 +25,7 @@ class ClientsViewSet(viewsets.GenericViewSet):
     queryset = Client.objects.all()
     serializer_class = ClientSerializer
     filter_backends = (filters.DjangoFilterBackend, OrderingFilter, SearchFilter)
-    filter_fields = ("name", "id", "adress")
+    filterset_fields = ("name", "id", "adress")
     ordering_fields = ("name",)
     search_fields = ["name", "adress"]
 

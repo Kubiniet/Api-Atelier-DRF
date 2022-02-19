@@ -8,6 +8,8 @@ SECTIONS_CHOICES = (
     ("MI", "MIXTOS"),
 )
 
+RANDOM_SECTIONS_CHOICES = ("BL", "SV", "RI", "PL", "CP", "PH", "MI")
+
 MONTHS = [
     "Enero",
     "Febrero",
